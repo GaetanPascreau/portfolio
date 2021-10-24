@@ -1,3 +1,4 @@
+/* DISPLAY FOR DESKTOPS*/
 body {
   font-family: Arial, sans-serif;
   display:  grid;
@@ -6,25 +7,16 @@ body {
   line-height: 1.2em;
 }
 
-/* LEFT COLUMN */
+/* Alternative display for mobile devices */
+.alternative-page-title {
+  display: none;
+}
+
+/* Left Column */
 
 .left-part {
   background-color: #f8c606;
   height: 100%;
-}
-
-.left-part h2 {
-  background-color: #3c3d3d;
-  color: #f8c606;
-  text-align: center;
-  text-transform: uppercase;
-  padding:  2%;
-}
-
-.left-part p {
-  margin: 20px 50px;
-  text-align: justify;
-  line-height: 1.3em;
 }
 
 .portrait-box {
@@ -39,6 +31,20 @@ body {
   border-radius: 50%;
   height: 15%;
   width: 45%;
+}
+
+.left-part h2 {
+  background-color: #3c3d3d;
+  color: #f8c606;
+  text-align: center;
+  text-transform: uppercase;
+  padding:  2%;
+}
+
+.left-part p {
+  margin: 5% 8%;
+  text-align: justify;
+  line-height: 1.3em;
 }
 
 a {
@@ -63,28 +69,28 @@ a:active {
 }
 
 .hobby {
-  margin: 20px auto;
+  margin: 5% auto;
 }
 
-/* RIGHT COLUMN */
+/* Right Column */
 
 .right-part {
-  padding-left: 50px;
+  padding-left: 7%;
 }
 
 h1 {
   text-transform: uppercase;
   font-weight: 200;
-  margin: 50px auto;
+  margin: 7% auto;
 }
 
 h3 {
-  margin-left: 20px;
+  margin-left: 5%;
 }
 
 .profession {
-  margin-top: -40px;
-  margin-bottom: 50px;
+  margin-top: -5%;
+  margin-bottom: 5%;
 }
 
 .firstname {
@@ -98,7 +104,7 @@ hr {
 
 .fas, .far {
   color: #f8c606;
-  margin-right:  20px;
+  margin-right:  3%;
 }
 
 .cv-section {
@@ -107,7 +113,7 @@ hr {
   grid-template-rows: 1fr;
   grid-auto-rows: auto;
   margin:  auto;
-  padding-right: 20px;
+  padding-right: 3%;
 }
 
 .period-place {
@@ -116,14 +122,18 @@ hr {
 }
 
 .city {
-  margin-top: -10px;
-  margin-left: 20px;
+  margin-top: -3%;
+  margin-left: 7%;
+}
+
+.school-work {
+  margin-top: -2%;
 }
 
 .section-description {
   text-align: justify;
-  margin-bottom: 20px;
-  padding-left: 10px;
+  margin-bottom: 4%;
+  padding-left: 2%;
 }
 
 .section-title {
@@ -139,12 +149,17 @@ hr {
     font-size: 2em;
   }
 
+  /* Alternative display for mobile devices */
+  .alternative-page-title {
+    display: block;
+  }
+
   .left-part {
     height: auto;
   }
 
   .left-part p {  
-    margin: 2% 5%;
+    margin: 3% 5%;
     line-height: 1.5em;
   }
 
@@ -167,20 +182,13 @@ hr {
   }
 
   .profession {
-    margin-top: -5%;
-    margin-bottom: 50px;
     text-align: center;
+    margin-bottom: 12%;
   }
 
   .cv-section {
     grid-template-columns: 1fr;
-    padding-right: 1%;
-  }
-
-  .section-description {
-    text-align: left;
-    margin-bottom: 5%;
-    padding: 4%;
+    padding-right: 2%;
   }
 
   .period-place {
@@ -192,17 +200,33 @@ hr {
     font-weight: 600;
   }
 
+  .section-description {
+    text-align: left;
+    margin-bottom: 3%;
+    padding: 4%;
+  }
+
   img {
     width: 30%;
     height: 30%;
   }
+
+  .hobbies {
+    padding-bottom: 2%;
+  }
+
   .hobbies img {
     width: 15%;
     height: 15%;
   }
+
+  /* Alternative display for mobile devices */
+  .page-title {
+    display: none;
+  }
 }
 
-/* DISPLAY ADAPTATION FOR SMALL SCREENS (of customized size) */   
+/* DISPLAY ADAPTATION FOR SMALL SCREENS (of customized size, or unlisted smartphones) */   
 @media screen and (max-width: 480px) {
   body {
     grid-template-columns: 1fr;
@@ -210,12 +234,17 @@ hr {
     font-size: 1em;
   }
 
+  /* Alternative display for small screens */
+  .alternative-page-title {
+    display: block;
+  }
+
   .left-part {
     height: auto;
   }
 
   .left-part p {  
-    margin: 2% 5%;
+    margin: 3% 5%;
     line-height: 1.5em;
   }
 
@@ -247,12 +276,6 @@ hr {
     padding-right: 1%;
   }
 
-  .section-description {
-    text-align: left;
-    margin-bottom: 5%;
-    padding: 4%;
-  }
-
   .period-place {
     margin-bottom: -6%;
   }
@@ -262,6 +285,12 @@ hr {
     font-weight: 600;
   }
 
+  .section-description {
+    text-align: left;
+    margin-bottom: 3%;
+    padding: 4%;
+  }
+
   img {
     width: 30%;
     height: 30%;
@@ -269,5 +298,10 @@ hr {
   .hobbies img {
     width: 15%;
     height: 15%;
+  }
+
+  /* Alternative display for small screens */
+  .page-title {
+    display: none;
   }
 }
